@@ -149,8 +149,7 @@ h3 {
 }
 .logo.sidebar:before {
     content: "";
-    height: 80vh;
-    width: 400px;
+    height: 80vh; 
     background: black; 
     bottom: 0;
     position: absolute;
@@ -177,6 +176,37 @@ h3 {
   grid-template-columns: 33vw 66vw;
   grid-template-areas: "sidebar content ";  
  
+}
+@media(max-width:500px ){
+  .logo img {
+  height: 40vh;
+  position: absolute;
+    bottom: 0px;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 33vw 66vw;
+  grid-template-areas: "sidebar sidebar" "content content";  
+ 
+}
+.logo.sidebar:before {
+    content: "";
+    height: 250px; 
+    background: black; 
+    bottom: 0;
+    position: absolute;
+    background:none;    
+}
+.quote   { 
+  font-size: 18px;  
+    background: #fdfdfd1c; 
+    border: radius;
+    border-radius: 31px;
+    -webkit-box-shadow: #5b5b5b52 13px 14px 19px 8px;
+    box-shadow: #5b5b5b52 13px 14px 19px 8px;
+}
+
 }
 *{ transition: all .3s ease-in;}
 </style>
