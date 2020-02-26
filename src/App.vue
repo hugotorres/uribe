@@ -248,7 +248,7 @@ export default {
           "#b4b8ab",
           "#41b883",
           "#ff5f45",
-          "#0798ec",
+          "#000000",
           "#41b883",
           "#ff5f45",
           "#0798ec",
@@ -395,9 +395,20 @@ export default {
   font-family: sans-serif;
   color: #2d3748;
 }
+.fp-tableCell:before {
+    content: "";
+    width: 25vw;
+    filter: invert(1);
+    height: 150vh;
+    left: 3%;
+    background: #2626261a;
+    position: absolute;
+    transform: rotate(40deg);
+}
 body {
   margin: 0;
   padding: 0;
+  background: black;
 }
 .character-image {
   height: 20vh;
